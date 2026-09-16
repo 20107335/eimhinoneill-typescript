@@ -1,1 +1,1 @@
-# eimhinoneill-typescript
+# ds-ts-lab
