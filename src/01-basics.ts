@@ -1,4 +1,8 @@
-
+interface Friend {
+    name: string;
+    phone: string;
+    age: number
+}
 
 const friend1 = {
   name: "Paul Fleming",
@@ -15,7 +19,15 @@ const friend2 = {
 const friends = [friend1, friend2];
 console.log(friends[1]);
 
-//   -------------------
+interface Colleague {
+    name: string;
+    department: string;
+    contact: {
+        email:string;
+        extension:121;
+    }
+}
+
 const colleague1 = {
   name: "Ralph Graham",
   department: "Engineering",
