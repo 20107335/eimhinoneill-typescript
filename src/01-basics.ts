@@ -15,6 +15,7 @@ const friend2 : Friend = {
 };
 
 
+
 const colleague1 = {
   name: "Ralph Graham",
   department: "Engineering",
