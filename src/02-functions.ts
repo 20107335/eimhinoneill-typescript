@@ -7,12 +7,6 @@ function older(f: Friend): string {
 }
 console.log(older(friends[0]))
 
-function highestExtension(cs: Colleague[]) {
-  const result = cs.sort(
-    (c1, c2) => c1.contact.extension - c2.contact.extension
-  );
-  return result[cs.length - 1];
-}
 
 function addColleague(colleagues: Colleague[], name: string, department: string, email: string) {
   colleagues.push({
@@ -63,3 +57,12 @@ console.log(findFriends(friends, (friend) => friend.age < 35));
 
 addColleague(colleagues.current, "Sheild O Connell", "HR", "soc@here.com");
 console.log(colleagues.current.filter((c) => c.name === "Sheild O Connell"));
+
+function highestExtension(cs: Colleague[]): Colleague {
+  const result = cs.sort(
+    (c1, c2) => c1.contact.extension - c2.contact.extension
+  );
+  return result[cs.length - 1];
+}
+console.log(highestExtension(colleagues.current));
+
