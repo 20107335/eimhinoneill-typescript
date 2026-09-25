@@ -86,3 +86,5 @@ function getBuddyListFriends(list: BuddyList): Friend[] {
     return friends;
   }, []);
 }
+
+
